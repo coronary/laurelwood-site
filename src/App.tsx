@@ -1,8 +1,8 @@
 import './App.css'
-import { AboutUs } from './pages/About/about'
+import { Beers } from './pages/Beers/beers.tsx'
 
 function App() {
-	return <AboutUs />
+	return <Beers />
 }
 
 export default App
