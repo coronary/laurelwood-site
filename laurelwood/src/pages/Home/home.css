@@ -1,0 +1,10 @@
+p#welcome-text {
+	text-align: center;
+	color: var(--primary-blue);
+	font-family: lwbody-bold;
+}
+
+p.bulk-text {
+	text-align: left;
+	color: var(--primary-blue);
+}
