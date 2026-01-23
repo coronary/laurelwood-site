@@ -1,4 +1,4 @@
-interface Beer {
+export interface Beer {
 	filePath: string;
 	beerName: string;
 	ariaText: string;
@@ -40,8 +40,6 @@ const seasonal: Beer[] = [
 	},
 ];
 
-const fetchBeers = () => {
+export const fetchBeers = () => {
 	return { evergreen, seasonal };
 };
-
-export default fetchBeers;
