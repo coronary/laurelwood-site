@@ -1,0 +1,40 @@
+div.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--primary-blue);
+
+}
+
+.navbar button {
+	flex-grow: 1;
+}
+
+button {
+	background-color: var(--primary-blue);
+}
+
+button:hover,
+button:active {
+	border-color: var(--primary-blue);
+}
+
+
+p:hover,
+p:active {
+	color: var(--primary-orange);
+}
+
+img {
+	margin: 0;
+}
+
+button {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+p {
+	color: var(--primary-off-white);
+	text-align: center;
+}
