@@ -6,6 +6,10 @@
 	--primary-yellow: #FAA21B;
 }
 
+section.mainContent {
+	margin-top: 90px;
+}
+
 @font-face {
 	font-family: lwBody;
 	src: url("./assets/fonts/BrandonGrotesqueCond-Regular.otf")

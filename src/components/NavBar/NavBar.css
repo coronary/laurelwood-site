@@ -6,7 +6,7 @@ div.navbar {
 
 }
 
-.navbar button {
+.navbar button.navButton {
 	flex-grow: 1;
 }
 
@@ -14,14 +14,14 @@ button {
 	background-color: var(--primary-blue);
 }
 
-button:hover,
-button:active {
+.navButton:hover,
+.navButton:active {
 	border-color: var(--primary-blue);
 }
 
 
-p:hover,
-p:active {
+.navButton p:hover,
+.navButton p:active {
 	color: var(--primary-orange);
 }
 
@@ -34,7 +34,7 @@ button {
 	padding-bottom: 4px;
 }
 
-p {
+.navButton p {
 	color: var(--primary-off-white);
 	text-align: center;
 }
