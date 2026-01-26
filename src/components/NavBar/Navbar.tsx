@@ -11,7 +11,7 @@ interface NavBarProps {
 export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => {
 	const setPage = (page: PAGES) => () => setDisplay(page)
 	return <div className="navbar w-full flex flex-row content-evenly justify-center align-center p-4">
-		<button onClick={setPage(PAGES.HOME)}>
+		<button className="navLogo" onClick={setPage(PAGES.HOME)}>
 			<img className="h-8 md:h-12" src={logo_icon} />
 		</button>
 		<button className="navButton" onClick={setPage(PAGES.BEERS)}>

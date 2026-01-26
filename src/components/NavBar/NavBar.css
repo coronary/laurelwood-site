@@ -15,7 +15,8 @@ button {
 }
 
 .navButton:hover,
-.navButton:active {
+.navButton:active,
+.navLogo:hover {
 	border-color: var(--primary-blue);
 }
 
