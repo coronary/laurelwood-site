@@ -20,8 +20,10 @@ export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => 
 		<button className="navButton" onClick={setPage(PAGES.HOME)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Archive</p>
 		</button>
-		<button className="navButton" onClick={setPage(PAGES.HOME)}>
-			<p className="text-2xl sm:text-3xl md:text-4xl">Contact</p>
+		<button className="navButton">
+			<a href="mailto:info@laurelwoodbrewing.com">
+				<p className="text-2xl sm:text-3xl md:text-4xl">Contact</p>
+			</a>
 		</button>
 		<button className="navButton" onClick={setPage(PAGES.HOME)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Newsletter</p>
