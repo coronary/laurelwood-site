@@ -17,7 +17,7 @@ export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => 
 		<button className="navButton" onClick={setPage(PAGES.BEERS)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Beer</p>
 		</button>
-		<button className="navButton" onClick={setPage(PAGES.HOME)}>
+		<button className="navButton" onClick={setPage(PAGES.ARCHIVE)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Archive</p>
 		</button>
 		<button className="navButton">
