@@ -3,6 +3,7 @@ import "~home/App.css"
 import "./NavBar.css"
 import logo_icon from "~assets/logo_icon.png"
 import { PAGES } from "../../definitions/pages"
+import { Hamburger } from "../Hamburger/Hamburger"
 
 interface NavBarProps {
 	setDisplay: Dispatch<SetStateAction<PAGES>>
@@ -11,11 +12,8 @@ interface NavBarProps {
 export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => {
 	const setPage = (page: PAGES) => () => setDisplay(page)
 	return <div className="navbar w-full flex flex-row content-evenly justify-center align-center p-4">
-		<div className="hamburger sm:hidden">
-			<div className="hamLine"></div>
-			<div className="hamLine"></div>
-			<div className="hamLine"></div>
-		</div>
+
+		<Hamburger setDisplay={setDisplay} />
 		<button className="navLogo" onClick={setPage(PAGES.HOME)}>
 			<img className="logoIcon h-8 md:h-12" src={logo_icon} />
 		</button>

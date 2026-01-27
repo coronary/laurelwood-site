@@ -1,0 +1,15 @@
+div.hamLine {
+	height: 0.25rem;
+	width: 2.25rem;
+	margin: 0.45rem 0;
+	border-radius: 25px;
+	background-color: var(--primary-yellow);
+}
+
+div.close1 {
+	transform: translate(0px, 8px) rotate(-45deg);
+}
+
+div.close2 {
+	transform: translate(0px, -3px) rotate(45deg);
+}
