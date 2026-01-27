@@ -2,8 +2,14 @@ import '~home/App.css'
 import './home.css'
 import NextUpLogo from '~assets/2026_label_logo.png'
 import AnniversaryLogo from '~assets/anniversary_logo.png'
+import type { Dispatch, ReactElement, SetStateAction } from 'react'
+import type { PAGES } from '../../definitions/pages'
 
-export const Home = () => {
+interface HomeProps {
+	setDisplay: Dispatch<SetStateAction<PAGES>>
+}
+
+export const Home: (props: HomeProps) => ReactElement = ({ setDisplay }) => {
 	return (
 		<section className="mainContent">
 			<img className="w-2/3 sm:w-1/2 md:w-1/3 lg:hidden mx-auto" src={AnniversaryLogo} />

@@ -23,7 +23,7 @@ function App() {
 			case PAGES.ARCHIVE:
 				return <Archive />
 			default:
-				return <Home />
+				return <Home setDisplay={setCurrPage} />
 		}
 	}
 	return <>

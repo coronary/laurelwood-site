@@ -11,21 +11,26 @@ interface NavBarProps {
 export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => {
 	const setPage = (page: PAGES) => () => setDisplay(page)
 	return <div className="navbar w-full flex flex-row content-evenly justify-center align-center p-4">
+		<div className="hamburger sm:hidden">
+			<div className="hamLine"></div>
+			<div className="hamLine"></div>
+			<div className="hamLine"></div>
+		</div>
 		<button className="navLogo" onClick={setPage(PAGES.HOME)}>
-			<img className="h-8 md:h-12" src={logo_icon} />
+			<img className="logoIcon h-8 md:h-12" src={logo_icon} />
 		</button>
-		<button className="navButton" onClick={setPage(PAGES.BEERS)}>
+		<button className="navButton hidden sm:block" onClick={setPage(PAGES.BEERS)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Beer</p>
 		</button>
-		<button className="navButton" onClick={setPage(PAGES.ARCHIVE)}>
+		<button className="navButton hidden sm:block" onClick={setPage(PAGES.ARCHIVE)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Archive</p>
 		</button>
-		<button className="navButton">
+		<button className="navButton hidden sm:block">
 			<a href="mailto:info@laurelwoodbrewing.com">
 				<p className="text-2xl sm:text-3xl md:text-4xl">Contact</p>
 			</a>
 		</button>
-		<button className="navButton" onClick={setPage(PAGES.HOME)}>
+		<button className="navButton hidden sm:block" onClick={setPage(PAGES.HOME)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Newsletter</p>
 		</button>
 	</div>

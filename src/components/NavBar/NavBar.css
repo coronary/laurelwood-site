@@ -10,9 +10,6 @@ div.navbar {
 	flex-grow: 1;
 }
 
-button {
-	background-color: var(--primary-blue);
-}
 
 .navButton:hover,
 .navButton:active,
@@ -26,16 +23,27 @@ button {
 	color: var(--primary-orange);
 }
 
-img {
+img.logoIcon {
 	margin: 0;
 }
 
-button {
+
+button.navButton,
+button.navLogo {
 	padding-top: 4px;
 	padding-bottom: 4px;
+	background-color: var(--primary-blue);
 }
 
 .navButton p {
 	color: var(--primary-off-white);
 	text-align: center;
+}
+
+div.hamLine {
+	height: 0.25rem;
+	width: 2.25rem;
+	margin: 0.45rem 0;
+	border-radius: 25px;
+	background-color: var(--primary-yellow);
 }
