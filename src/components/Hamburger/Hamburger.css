@@ -13,3 +13,17 @@ div.close1 {
 div.close2 {
 	transform: translate(0px, -3px) rotate(45deg);
 }
+
+div.navMenuHolder {
+	position: fixed;
+	top: 73px;
+	left: 0px;
+	width: 100%;
+}
+
+.navMenuHolder button {
+	background-color: var(--primary-green);
+	color: var(--primary-yellow);
+	border-radius: 0px;
+	padding: 12px;
+}
