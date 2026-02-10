@@ -13,7 +13,7 @@ interface AgeGateProps {
 export const AgeGate: (props: AgeGateProps) => ReactElement = ({ show, handleYes }) => {
 	return show ? <div id="privacyScreen">
 		<div id="ageGate" className="mx-auto sm:w-1/2 py-8 mt-12">
-			<img src={text_logo} className="w-3/4 mb-8" />
+			<img src={text_logo} className="w-3/4 mb-8 mx-auto" />
 			<h1 className="ageText mx-auto my-8">Are You 21 Years of Age or Older?</h1>
 			<div id="ageButtons" className="flex row justify-center">
 				<button id="yes" onClick={() => handleYes(false)} className=""><h1 className="">YES</h1></button>

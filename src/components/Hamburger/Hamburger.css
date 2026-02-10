@@ -26,6 +26,7 @@ div.navMenuHolder {
 	color: var(--primary-yellow);
 	border-radius: 0px;
 	padding: 12px;
+	margin: 0;
 }
 
 .navMenuHolder a {
