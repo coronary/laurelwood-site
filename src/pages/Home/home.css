@@ -9,13 +9,14 @@ p.bulk-text {
 	color: var(--primary-blue);
 }
 
-a.homeLink {
+p.homeLink {
 	font-family: lwbody-it;
-	color: var(--primary-orange)
+	color: var(--primary-orange);
+	display: inline;
 }
 
-a.homeLink:visited,
-a.homeLink:hover,
-a.homeLink:active {
+p.homeLink:visited,
+p.homeLink:hover,
+p.homeLink:active {
 	color: var(--primary-green)
 }
