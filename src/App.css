@@ -31,12 +31,6 @@ body {
 	font-family: lwbody;
 }
 
-a {
-	font-family: lwbody-it;
-	color: var(--primary-orange)
-}
-
-
 a:visited,
 a:hover,
 a:active {

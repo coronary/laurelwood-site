@@ -8,3 +8,14 @@ p.bulk-text {
 	text-align: left;
 	color: var(--primary-blue);
 }
+
+a.homeLink {
+	font-family: lwbody-it;
+	color: var(--primary-orange)
+}
+
+a.homeLink:visited,
+a.homeLink:hover,
+a.homeLink:active {
+	color: var(--primary-green)
+}
