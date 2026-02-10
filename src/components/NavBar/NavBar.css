@@ -14,7 +14,8 @@ div.navbar {
 .navButton:hover,
 .navButton:active,
 .navLogo:hover {
-	border-color: var(--primary-blue);
+	box-shadow: none;
+	border: none;
 }
 
 
