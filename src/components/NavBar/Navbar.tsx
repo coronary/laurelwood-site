@@ -11,10 +11,10 @@ interface NavBarProps {
 
 export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => {
 	const setPage = (page: PAGES) => () => setDisplay(page)
-	return <div className="navbar w-full flex flex-row content-evenly justify-center align-center p-4">
+	return <div className="navbar w-full flex flex-row content-evenly justify-start sm:justify-center align-center p-4">
 
 		<Hamburger setDisplay={setDisplay} />
-		<button className="navLogo" onClick={setPage(PAGES.HOME)}>
+		<button className="navLogo flex-1" onClick={setPage(PAGES.HOME)}>
 			<img className="logoIcon h-8 md:h-12" src={logo_icon} />
 		</button>
 		<button className="navButton hidden sm:block" onClick={setPage(PAGES.BEERS)}>

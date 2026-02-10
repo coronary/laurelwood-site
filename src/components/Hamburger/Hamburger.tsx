@@ -30,7 +30,7 @@ export const Hamburger: (props: HamburgerProps) => ReactElement = ({ setDisplay 
 					<p className="text-2xl">Contact</p>
 				</a>
 			</button>
-			<button className="" onClick={setPage(PAGES.HOME)}>
+			<button className="" onClick={setPage(PAGES.NEWSLETTER)}>
 				<p className="text-2xl">Newsletter</p>
 			</button>
 		</div>
@@ -38,7 +38,7 @@ export const Hamburger: (props: HamburgerProps) => ReactElement = ({ setDisplay 
 	}
 
 	const hamburgerClosed = (
-		<div onClick={() => setIsOpen(true)} className="hamburgerClosed sm:hidden">
+		<div onClick={() => setIsOpen(true)} className="hamburgerClosed flex-1 sm:hidden">
 			<div className="hamLine"></div>
 			<div className="hamLine"></div>
 			<div className="hamLine"></div>
@@ -46,7 +46,7 @@ export const Hamburger: (props: HamburgerProps) => ReactElement = ({ setDisplay 
 	)
 	const hamburgerOpen = (
 		<>
-			<div onClick={() => setIsOpen(false)} className="hamburgerClosed">
+			<div onClick={() => setIsOpen(false)} className="hamburgerClosed flex-1 ">
 				<div className="hamLine close1"></div>
 				<div className="hamLine close2"></div>
 			</div>
