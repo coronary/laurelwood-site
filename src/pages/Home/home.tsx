@@ -21,7 +21,7 @@ export const Home: (props: HomeProps) => ReactElement = ({ setDisplay }) => {
 				We'll also be sharing blasts from the past and highlights from our 25 years in business so stay tuned for some vintage stuff!
 				<br />
 				<br />
-				Stay with us this year. <p className="homeLink" onClick={setPage(PAGES.ARCHIVE)}>Sign up for our newsletter</p>, follow us on all our socials to keep up with what we have happening this year.
+				Stay with us this year. <p className="homeLink" onClick={setPage(PAGES.NEWSLETTER)}>Sign up for our newsletter</p>, follow us on all our socials to keep up with what we have happening this year.
 				<br />
 				<br />
 				Cheers!

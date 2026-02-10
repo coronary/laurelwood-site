@@ -2,4 +2,5 @@ export enum PAGES {
 	BEERS,
 	ARCHIVE,
 	HOME,
+	NEWSLETTER,
 }
