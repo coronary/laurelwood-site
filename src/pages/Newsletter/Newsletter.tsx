@@ -7,7 +7,7 @@ const postUrl = `https://laurelwoodbrewpub.us7.list-manage.com/subscribe/post?u=
 
 export const Newsletter = () => {
 	return (
-		<section className="mainContent">
+		<section className="mainContent w-full">
 			<MailChimpSubscribe
 				url={postUrl}
 				render={({ subscribe, status, message }) => {

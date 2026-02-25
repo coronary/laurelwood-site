@@ -28,7 +28,7 @@ export const NavBar: (props: NavBarProps) => ReactElement = ({ setDisplay }) => 
 				<p className="text-2xl sm:text-3xl md:text-4xl">Contact</p>
 			</a>
 		</button>
-		<button className="navButton hidden sm:block" onClick={setPage(PAGES.HOME)}>
+		<button className="navButton hidden sm:block" onClick={setPage(PAGES.NEWSLETTER)}>
 			<p className="text-2xl sm:text-3xl md:text-4xl">Newsletter</p>
 		</button>
 	</div>

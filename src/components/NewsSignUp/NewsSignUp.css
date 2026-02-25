@@ -1,0 +1,14 @@
+input[type=submit] {
+	background: var(--primary-blue);
+	color: var(--primary-yellow);
+
+}
+
+p.subStatus.error,
+p.subStatus.invalid {
+	color: var(--primary-orange);
+}
+
+p.subStatus.success {
+	color: var(--primary-green);
+}
