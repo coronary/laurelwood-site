@@ -1,23 +1,15 @@
-import workhorse_small from "/src/assets/sell_sheets/evergreen/workhorse_sell_small.png";
-import workhorse_large from "/src/assets/sell_sheets/evergreen/workhorse_sell_large.png";
+import workhorse from "/src/assets/sell_sheets/evergreen/workhorse_sell.png";
 import red_small from "/src/assets/sell_sheets/evergreen/free_range_red_sell.png";
+import red_elephant from "/src/assets/sell_sheets/evergreen/red_elephant_sell.png";
 import coldbrew from "/src/assets/sell_sheets/rotating/cold_brew_sell.png";
-import treehugger from "/src/assets/sell_sheets/rotating/treehugger_sell.png";
-import vinter_varmer from "/src/assets/sell_sheets/rotating/vinter_varmer_sell.png";
 
 export interface Beer {
-	filePath: string;
+	filePath?: string;
 	beerName: string;
 	ariaText: string;
 }
 
 const evergreen: Beer[] = [
-	{
-		beerName: "Workhorse IPA 12oz Cans",
-		filePath: workhorse_small,
-		ariaText:
-			"Workhorse IPA 12oz Cans: West Coast-Style India Pale Ale: An extremely well-balanced and super flavorful IPA brewed in the west coast style.",
-	},
 	{
 		beerName: "Free Range Red 12oz Cans",
 		filePath: red_small,
@@ -26,9 +18,15 @@ const evergreen: Beer[] = [
 	},
 	{
 		beerName: "Workhorse IPA 19.2oz Cans",
-		filePath: workhorse_large,
+		filePath: workhorse,
 		ariaText:
-			"Workhorse IPA 19.2oz Cans: West Coast-Style India Pale Ale: An extremely well-balanced and super flavorful IPA brewed in the west coast style.",
+			"Workhorse IPA 19.2oz  and 12oz Cans: West Coast-Style India Pale Ale: An extremely well-balanced and super flavorful IPA brewed in the west coast style.",
+	},
+	{
+		beerName: "Red Elephant India Red Ale 19.2oz Cans",
+		filePath: red_elephant,
+		ariaText:
+			"Red Elephant India Red Ale 19.2oz Cans: Here is an elephant of another color! We Took the the hop bill of our popular Green Elephant IPA and mixed in the malt bill of our Free Range Red to make our Red Elephant. The charge of pine, citrus, tropical and resinous aroma hops mix with the caramel malt body to create this refreshing red IPA.",
 	},
 ];
 
@@ -41,13 +39,11 @@ const seasonal: Beer[] = [
 	},
 	{
 		beerName: "Tree Hugger Porter",
-		filePath: treehugger,
 		ariaText:
 			"Tree Hugger Porter: Porter: Tree Hugger Porter is one of Laurelwood's longest running beers! Brewed since we opened in 2001 Tree Hugger is about as easy drinking as a porter gets. It has a dark black color but don't let that fool you. The light body and wonderful balance of sweet caramel and toffee flavers intertwine with the mildfloral, woody hop bitterness and make this beer a great choice when you want something dark without it being too intense. We hope you enjoy one of our favorite beers, cheers!",
 	},
 	{
 		beerName: "Vinter Varmer Winter Ale",
-		filePath: vinter_varmer,
 		ariaText:
 			"Vinter Varmer Winter Ale: Vinter Varmer in an interpretation of a special version of an english style old or stock ale brewed for the beginning of winter. A smooth, strong, malt driven beer with a nice balance of mild, pleasant hops to fortify against the cold. we use a blend of six malts and four hops to create an ale with deep caramel character, spicy hop flavor and a dry roasty finish. This Winter Warmer Ale is as rich and complex as it is drinkable.",
 	},
