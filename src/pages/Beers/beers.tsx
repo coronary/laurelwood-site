@@ -12,6 +12,7 @@ const urlFor = (source: SanityImageSource) =>
   projectId && dataset
     ? createImageUrlBuilder({ projectId, dataset }).image(source)
     : null;
+const renderBeer = (beer: Beer) => <img className="beerSheet" key={beer.beerName} src={urlFor(beer.sanityImage)?.url()} alt={beer.ariaText} />
 
 export const Beers = () => {
   const [evergreenBeers, setEvergreenBeers] = useState<Beer[]>([])
@@ -25,9 +26,9 @@ export const Beers = () => {
 	return (
 		<section className="mainContent">
 			<p className="text-5xl sm:text-8xl mb-4">Always On</p>
-			{evergreenBeers.map((beer) => <img className="beerSheet" key={beer.beerName} src={urlFor(beer.sanityImage)?.url()} alt={beer.ariaText} />)}
+			{evergreenBeers.map(renderBeer)}
 			<p className="text-5xl sm:text-8xl mt-12 mb-8">Rotating Beers - look for these seasonal brews at your favorite beer retailer now</p>
-			{seasonalBeers.map((beer) => <img className="beerSheet" key={beer.beerName} src={urlFor(beer.sanityImage)?.url()} alt={beer.ariaText} />)}
+			{seasonalBeers.map(renderBeer)}
 		</section>
 	)
 }
