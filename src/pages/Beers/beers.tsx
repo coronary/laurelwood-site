@@ -19,8 +19,8 @@ export const Beers = () => {
 	const [seasonalBeers, setSeasonalBeers] = useState<Beer[]>([])
   useEffect(() => {
     fetch_beers().then((beers) => {
-      setEvergreenBeers(beers.filter(beer => !beer.isSeasonal))
-      setSeasonalBeers(beers.filter(beer => beer.isSeasonal))
+      setEvergreenBeers(beers.filter(beer => beer.visible && !beer.isSeasonal))
+      setSeasonalBeers(beers.filter(beer => beer.visible && beer.isSeasonal))
     })
 	}, [])
 	return (
