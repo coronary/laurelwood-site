@@ -6,6 +6,7 @@ import { fetch_beers } from '../../functions/sanityBeers'
 import { useEffect, useState } from 'react'
 import { createImageUrlBuilder, type SanityImageSource } from '@sanity/image-url'
 import { client } from '../../sanity/client'
+import { shouldRenderBeer } from '../../functions/beerShouldRender'
 
 const {projectId, dataset} = client.config()
 const urlFor = (source: SanityImageSource) =>
@@ -19,8 +20,8 @@ export const Beers = () => {
 	const [seasonalBeers, setSeasonalBeers] = useState<Beer[]>([])
   useEffect(() => {
     fetch_beers().then((beers) => {
-      setEvergreenBeers(beers.filter(beer => beer.visible && !beer.isSeasonal))
-      setSeasonalBeers(beers.filter(beer => beer.visible && beer.isSeasonal))
+      setEvergreenBeers(beers.filter(beer => shouldRenderBeer(beer) && !beer.isSeasonal))
+      setSeasonalBeers(beers.filter(beer => shouldRenderBeer(beer) && beer.isSeasonal))
     })
 	}, [])
 	return (
