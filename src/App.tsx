@@ -12,8 +12,6 @@ import { PAGES } from './definitions/pages.ts'
 import { Newsletter } from './pages/Newsletter/Newsletter.tsx'
 import { AgeGate } from './components/AgeGate/AgeGate.tsx'
 
-
-
 function App() {
 	const [showAgeGate, setAgeGate] = useState(true)
 	const [currPage, setCurrPage] = useState(PAGES.HOME)
