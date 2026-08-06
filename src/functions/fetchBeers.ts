@@ -3,13 +3,7 @@ import red_small from "/src/assets/sell_sheets/evergreen/free_range_red_sell.png
 import red_elephant from "/src/assets/sell_sheets/evergreen/red_elephant_sell.png";
 import coldbrew from "/src/assets/sell_sheets/rotating/cold_brew_sell.png";
 
-export interface Beer {
-	filePath?: string;
-	beerName: string;
-	ariaText: string;
-}
-
-const evergreen: Beer[] = [
+const evergreen = [
 	{
 		beerName: "Free Range Red 12oz Cans",
 		filePath: red_small,
@@ -30,7 +24,7 @@ const evergreen: Beer[] = [
 	},
 ];
 
-const seasonal: Beer[] = [
+const seasonal  = [
 	{
 		beerName: "Cold Brewed Coffee Stout w/ Cocoa Nibs",
 		filePath: coldbrew,
